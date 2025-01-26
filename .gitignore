@@ -1,0 +1,57 @@
+# Haskell编译产物
+dist
+dist-*
+cabal-dev
+*.o
+*.hi
+*.hie
+*.chi
+*.chs.h
+*.dyn_o
+*.dyn_hi
+.hpc
+.hsenv
+.cabal-sandbox/
+cabal.sandbox.config
+*.prof
+*.aux
+*.hp
+*.eventlog
+.stack-work/
+cabal.project.local
+cabal.project.local~
+.HTF/
+.ghc.environment.*
+
+# Haskell Stack工具
+.stack-work/
+
+# Cabal构建目录
+dist/
+dist-newstyle/
+
+# IDE和编辑器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 项目特定的输出文件
+output.html
+*.html
+
+# 日志文件
+*.log
+
+# 本地配置文件
+.env
+.env.local
+.env.*.local
+
+# 临时文件
+tmp/
+temp/
+
+md2html

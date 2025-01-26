@@ -1,0 +1,31 @@
+cabal-version:      2.4
+name:               markdown-parser
+version:            0.1.0.0
+synopsis:           A simple Markdown to HTML converter
+description:        A Haskell program that converts Markdown files to HTML
+homepage:
+license:            MIT
+license-file:       LICENSE
+author:             briskdust
+maintainer:         briskdust@gmail.com
+category:           Text
+extra-source-files: CHANGELOG.md
+
+executable markdown-parser
+    main-is:          Main.hs
+    other-modules:    Markdown.Types
+                     Markdown.Parser
+                     Markdown.HTML
+    
+    build-depends:    base ^>=4.17.2.0
+    hs-source-dirs:   .
+    default-language: Haskell2010
+    ghc-options:      -Wall
+                     -Wcompat
+                     -Widentities
+                     -Wincomplete-record-updates
+                     -Wincomplete-uni-patterns
+                     -Wmissing-export-lists
+                     -Wmissing-home-modules
+                     -Wpartial-fields
+                     -Wredundant-constraints 
